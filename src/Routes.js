@@ -20,7 +20,6 @@ import Home from './pages/Home/index'
 import ProcurarCampanhas from "./pages/Campanhas/Campanhas"
 import ProcurarComunidades from "./pages/Comunidades/comunidades"
 
-import Index from '../src/mapbox/src/index';
 
 
 
@@ -57,8 +56,6 @@ export default () => {
      <Route exact path="/ProcurarComunidades" element={<ProcurarComunidades />}>
      </Route>
      <Route exact path="/atualizarCampanha/:id" element={<ContaAtualizarCampanha />}></Route>
-
-     <Route exact path="/geolocalizacao" element={<Index />}></Route>
 
 
     </Routes>
