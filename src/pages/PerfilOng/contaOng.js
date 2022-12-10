@@ -47,10 +47,10 @@ function ContaOng(props) {
 
   const [posts, setPosts] = useState([])
 
-  for (let index = 0; index < 5; index++) {
-    posts.push(index);
+  // for (let index = 0; index < 5; index++) {
+  //   posts.push(index);
 
-  }
+  // }
 
 
 
@@ -94,7 +94,7 @@ function ContaOng(props) {
 
       <div className='divEspacoHeaderCampanha containerPaginaCampanha divEspacoHeaderCampanha'>
         <div className="container">
-          {/* <div className="music-boxes">
+          <div className="music-boxes">
             {posts.map((posts, index) => (
               // <CampanhaEditOng
               //   key={index}
@@ -147,13 +147,13 @@ function ContaOng(props) {
       </CardCampanhasStyled>
             
            ))}
-          </div> */}
+          </div>
 
 
-<CardCampanhasStyled>
+{/* <CardCampanhasStyled> */}
 
 
-<div className='cardCampanha divEspacoCardCampanha'>
+{/* <div className='cardCampanha divEspacoCardCampanha'>
 <div className='divCapaCampanha'>
   <img src={foto4}></img>
 </div>
@@ -163,9 +163,9 @@ function ContaOng(props) {
   <p>Campanha destinado a arrecadação de agasalhos da ong @juntosNoInverno. Nossa campanha tem como meta agasalhar mais de 100 moradores de rua localizados......Campanha destinado a arrecadação de agasalhos.  Nossa campanha...</p></div>
   {/* <div className='divBotaoCardCampanha'>
   <button className='botaoCardCampanha'>Doar</button>
-  </div> */}
+  </div> */} */
 
-<div className='divBotaoCardCampanha'>
+{/* <div className='divBotaoCardCampanha'>
             <Link to= {{ pathname: `/atualizarCampanha/${posts.id}`}} >
             <button
              className='botaoCardCampanha botaoAtualizarCampanha'>Atualizar</button>
@@ -191,7 +191,7 @@ function ContaOng(props) {
   <button className='botaoCardCampanha'>Doar</button>
   </div> */}
 
-<div className='divBotaoCardCampanha'>
+{/* <div className='divBotaoCardCampanha'>
             <Link to= {{ pathname: `/atualizarCampanha/${posts.id}`}} >
             <button
              className='botaoCardCampanha botaoAtualizarCampanha'>Atualizar</button>
@@ -202,12 +202,12 @@ function ContaOng(props) {
                > Excluir</button>
             </div>
             </div>
-</div> 
+</div>  */}
 
-
+ {/* }
 
   
-</CardCampanhasStyled>
+</CardCampanhasStyled> */}
 
 
 
@@ -220,7 +220,7 @@ function ContaOng(props) {
 
 
     </>
+  
   )
 }
-
 export default ContaOng;

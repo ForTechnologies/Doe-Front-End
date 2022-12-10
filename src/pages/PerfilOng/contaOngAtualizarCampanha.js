@@ -59,7 +59,7 @@ export const ContaAtualizarCampanha = () => {
 
       useEffect(() => {
       api
-      .get("/campanhas/1")
+      .get("/campanhas")
       .then ((response) =>  {
         //reset é responsavel por passar os dados pro input
         reset(response.data)
