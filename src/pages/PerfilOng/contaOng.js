@@ -57,12 +57,12 @@ function ContaOng(props) {
   useEffect(() => {
     // so vai executar depois que o component foi renderizado
     api
-      .get("/campanhas/1")
+      .get("/campanhas")
       .then((res) => {
         console.log(res)
         setPosts(res.data.reverse());
         //salvar lista
-        localStorage.setItem('campanhas', JSON.stringify(res.data))
+        // localStorage.setItem('campanhas', JSON.stringify(res.data))
 
       })
       .catch((erro) => {
@@ -72,7 +72,7 @@ function ContaOng(props) {
 
 
   function deletePost(id) {
-    api.delete(`/campanhas/atualizarCampanha/${id}`)
+    api.delete(`/campanhas/${id}`)
     set(posts.filter(posts => posts.id !== id))
     console.log(id)
   }
@@ -133,7 +133,7 @@ function ContaOng(props) {
 
             </div>
             <div className='divBotaoCardCampanha'>
-            <Link to= {{ pathname: `/atualizarCampanha/${posts.id}`}} >
+            <Link to= {{ pathname: `/atualizarCampan/${posts.id}`}} >
             <button
              className='botaoCardCampanha botaoAtualizarCampanha'>Atualizar</button>
             </Link>
