@@ -9,8 +9,7 @@ const api = axios.create({
         'Access-Control-Allow-Headers': '*',
         'Access-Control-Allow-Methods': '*',
         'Access-Control-Allow-Credentials': 'true',
-        'Content-Type': 'application/json',
-        client_id: process.env.CLIENT_ID,
+        'Content-Type': 'application/json'
 
     },
 });

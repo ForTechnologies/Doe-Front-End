@@ -58,7 +58,7 @@ function ContaOng(props) {
     // so vai executar depois que o component foi renderizado
     api
       .get("/campanhas")
-      .then(({data}) => {
+      .then((data) => {
         console.log(data)
         setPosts(data.posts);
         //
@@ -81,12 +81,12 @@ function ContaOng(props) {
   }
    
   
-  //carregar listta
-  useEffect(() => {
-    if(localStorage.getItem('campanhas') !== null ) {
-        setPosts(JSON.parse(localStorage.getItem('campanhas')))
-    }
-  })
+  // //carregar listta
+  // useEffect(() => {
+  //   if(localStorage.getItem('campanhas') !== null ) {
+  //       setPosts(JSON.parse(localStorage.getItem('campanhas')))
+  //   }
+  // })
 
 
   return (
@@ -136,7 +136,7 @@ function ContaOng(props) {
 
             </div>
             <div className='divBotaoCardCampanha'>
-            <Link to= {{ pathname: `/atualizarCampan/${posts.id}`}} >
+            <Link to= {{ pathname: `/atualizarCampanha/${posts.id}`}} >
             <button
              className='botaoCardCampanha botaoAtualizarCampanha'>Atualizar</button>
             </Link>
