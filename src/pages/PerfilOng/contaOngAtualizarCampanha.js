@@ -47,6 +47,9 @@ export const ContaAtualizarCampanha = () => {
 
      const { id } = useParams()
 
+     let history = useHistory()
+
+
       const { register, handleSubmit, formState: { erros }, reset } = useForm();
        
 
@@ -60,9 +63,9 @@ export const ContaAtualizarCampanha = () => {
       useEffect(() => {
       api
       .get(`/campanhas/${id}`)
-      .then ((response) =>  {
+      .then ((data) =>  {
         //reset é responsavel por passar os dados pro input
-        reset(response.data)
+        handleSubmit(data.register)
         // localStorage.setItem('campanhas', JSON.stringify(response.data))
       } )
       
