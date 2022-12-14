@@ -2,6 +2,8 @@ import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import "./styles/login.css";
 import "./global.css";
+import './components/CardsGeo/CardsGeo.css'
+
 import "./components/Forms/styleForms.js";
 import "./components/botoes/style";
 
@@ -10,7 +12,7 @@ import PerfilOng from "./pages/PerfilOng/contaOngSecaoSobre";
 import PerfilOngCampanha from "./pages/PerfilOng/contaOng";
 import ContaOngAdicionarCampanha from "./pages/PerfilOng/contaOngAdicionarCampanha";
 import ContaOngTelaConfig from "./pages/PerfilOng/contaOngEditarDados";
-import { ContaAtualizarCampanha } from "./pages/PerfilOng/contaOngAtualizarCampanha";
+import ContaAtualizarCampanha from "./pages/PerfilOng/contaOngAtualizarCampanha.js";
 import ProcurarCampanhas from "./pages/Campanhas/Campanhas.js";
 import ProcurarComunidades from "./pages/Comunidades/comunidades";
 
@@ -27,7 +29,7 @@ import { InformacoesDoacao } from "./pages/InformacoesDoacao";
 
 import FormularioDoacao from './components/FormularioDoacao/FormularioDoacao.jsx'
 
-
+import PontosDeDoacao from '../src/pages/pontosDeDoacao/PontosDeDoacao.jsx'
 
 
 function App() {
@@ -84,7 +86,7 @@ function App() {
         ></Route>
         <Route
           exact
-          path="/atualizarCampanha/:id"
+          path="/atualizarcampanha/:id"
           element={<ContaAtualizarCampanha />}
         ></Route>
 
@@ -94,6 +96,9 @@ function App() {
           path="/formularioDoacao"
           element={<FormularioDoacao />}
         ></Route>
+
+    <Route exact path="/pontos" element={<PontosDeDoacao />}></Route>
+
 
       </Routes>
     </BrowserRouter>

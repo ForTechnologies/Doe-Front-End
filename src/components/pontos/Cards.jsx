@@ -11,6 +11,14 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 
+
+import Localizacao from '../../assets/localizacao.png';
+import Telefone from '../../assets/telefone.png';
+import Email from '../../assets/email.png';
+
+import '../CardsGeo/CardsGeo.css'
+
+
 import dados from './dados';
 
 function Arrow(props) {
@@ -68,40 +76,38 @@ const Cards = ({onOpen = () => {}}) => {
             <Typography variant='subtitle' sx={{ borderBottom: '5px solid #C1272D', textAlign: 'left' }}>
                 PONTOS MAIS PROXIMOS:
             </Typography>
-            <div className='cards'>
-                <div>
-                    <Slider {...settings}>
-                        {dados.map(item =>
-                            <Box key={item.id} sx={{ maxWidth: 300, marginTop: 5 }}>
-                                <Card variant="outlined" sx={{ borderRadius: 5, padding: 1, }}>
-                                    <CardContent>
-                                        <Typography variant="subtitle" component="div" sx={{ mb: 1.5 }}>
-                                            {item.nome}
-                                        </Typography>
-                                        <Typography variant='body' className='card-info'>
-                                            <LocationOnIcon color='primary' sx={{ marginRight: 1.5 }} />
-                                            {item.endereco}
-                                        </Typography>
-                                        <Typography variant='body' className='card-info'>
-                                            <PhoneIcon color='primary' sx={{ marginRight: 1.5 }} />
-                                            {item.telefone}
-                                        </Typography>
-                                        <Typography variant='body' className='card-info'>
-                                            <EmailIcon color='primary' sx={{ marginRight: 1.5 }} />
-                                            {item.email}
-                                        </Typography>
-                                    </CardContent>
-                                    <CardActions>
-                                        <Button size="small" onClick={onOpen}>Ver mais</Button>
-                                    </CardActions>
-                                </Card>
-                            </Box>
-                        )}
-                    </Slider>
-                </div>
-            </div>
+             <div className='container-cards'> 
 
-        </div>
+            <div className='cards'>
+                    
+
+                          
+                            <h2>ONG DOE ALIMENTOS</h2>
+                            <div className="coment">
+                               <img src={Localizacao} alt="" />
+                               <span>Rua Tauí, 354 - Jardim Paulista, São Paulo - SP</span>
+                        </div>
+                        <div className="coment">
+                               <img src={Telefone} alt="" />
+                               <span>11 2459-8735</span>
+                        </div>
+                        <div className="coment">
+                               <img src={Email} alt="" />
+                               <span>ongdoealime@gmail.com</span>
+                        </div> 
+                           
+                        </div>
+                      
+                      
+
+
+                        </div>
+                    </div>
+                    
+                    
+               
+           
+
     )
 }
 

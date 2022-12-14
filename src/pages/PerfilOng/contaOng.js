@@ -58,9 +58,10 @@ function ContaOng(props) {
     // so vai executar depois que o component foi renderizado
     api
       .get("/campanhas")
-      .then((res) => {
-        console.log(res)
-        setPosts(res.data.reverse());
+      .then(({data}) => {
+        console.log(data)
+        setPosts(data.posts);
+        //
         //salvar lista
         // localStorage.setItem('campanhas', JSON.stringify(res.data))
 
@@ -69,6 +70,8 @@ function ContaOng(props) {
         console.log(erro);
       });
   }, []);
+
+  console.log(videos);
 
 
   function deletePost(id) {

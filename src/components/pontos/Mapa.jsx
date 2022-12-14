@@ -1,6 +1,7 @@
 import Typography from '@mui/material/Typography';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ModalEdtEndereco from './ModalEdtEndereco';
+import MapaLocal from "../../assets/images/mapa.png"
 
 const Mapa = ({onOpen = () => {}}) => {
 
@@ -18,7 +19,7 @@ const Mapa = ({onOpen = () => {}}) => {
                 Rua Haddok Lobo, 351
                 <KeyboardArrowDownIcon color='primary' />
             </Typography>
-            <img src="/images/mapa.png" alt="mapa.png" className="mapa" />
+            <img src={MapaLocal} alt="mapa.png" className="mapa" />
         </div>
     )
 }
