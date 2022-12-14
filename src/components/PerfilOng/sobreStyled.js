@@ -93,6 +93,9 @@ export const SecaoSobreStyled = styled.div `
     height: 17%;
     margin: 5px 20px auto;
     padding: 20px;
+    font-weight: lighter;
+    font-size: 18px;
+   
    
 }
 
@@ -109,7 +112,7 @@ export const SecaoSobreStyled = styled.div `
 
 .conteudoSobreOng p {
     padding: 10px 0;
-    font-weight: lighter;
+    font-weight: lighter !important;
     height: 10%;
 
 
@@ -121,11 +124,12 @@ export const SecaoSobreStyled = styled.div `
 
 .conteudoDadosDaEntiedade {
     width: auto;
-    height: 8%;
+    height: 10%;
     margin: 4px 20px auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 18px;
 
 }
 
@@ -143,12 +147,13 @@ export const SecaoSobreStyled = styled.div `
 
 .conteudoTransferenciaBancaria {
     width: auto;
-    height: 6%;
+    height: 9%;
     margin: 4px 20px auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-weight: lighter;
+    font-size: 18px;
 
 
 }
@@ -166,6 +171,7 @@ export const SecaoSobreStyled = styled.div `
 .avisoTransferenciaBancaria {
     height: 20%;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 
@@ -178,6 +184,7 @@ export const SecaoSobreStyled = styled.div `
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 18px;
 
 }
 
@@ -207,6 +214,7 @@ export const SecaoSobreStyled = styled.div `
     width: auto;
     height: 30%;
     margin: 4px 20px auto;
+    font-size: 18px;
 
 }
 
@@ -239,7 +247,7 @@ width: 250px;
 justify-content: center;
 align-items: center;
 color: white;
-font-size: 13px;
+font-size: 18px;
 border-radius: 13px;
 background-color: #FF5555;
 border: 1px solid transparent;

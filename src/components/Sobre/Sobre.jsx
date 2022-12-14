@@ -15,11 +15,11 @@ export const Sobre = () => {
           <div className="homeless">
             <img src={Morador} alt="" className="morador" />
           </div>
-          <div className="plataforma">
+          <div className="plataforma1">
             <span className="doe">DOE!</span>
             <h1 className="online">
-              Plataforma Online Que <br />
-              Une Ongs E Doadores!
+              Plataforma online que <br />
+              une ongs e doadores!
             </h1>
             <div className="estrela">
               <img src={Star} alt="" />
@@ -33,7 +33,7 @@ export const Sobre = () => {
             </span>
             <div className="participe">
               <img src={Cube} alt="" />
-              <span className="parte">Participe da comunidade</span>
+              <span className="encontre">Participe da comunidade</span>
             </div>
             <span className="comunidade">
               Comunidades voltada as ongs, permite a entrada de milhares <br />
@@ -42,7 +42,7 @@ export const Sobre = () => {
             </span>
             <div className="rede">
               <img src={Quadrado} alt="" />
-              <span className="apoio">Entre na rede de apoio </span>
+              <span className="encontre">Entre na rede de apoio </span>
             </div>
             <span className="pessoas">
               Encontre pessoas que tem muito em comum: empatia e intenção <br />

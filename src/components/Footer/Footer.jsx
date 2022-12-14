@@ -27,8 +27,8 @@ export const Footer = () => {
                                 Email de contato
                             </span>
                             <span className="infoFo">
-                                exemple@gmail.com <br />
-                                exemple@gmail.com
+                                doeatendimento@gmail.com <br />
+                                doecontato@gmail.com
                             </span>
                         </div>
                     </div>
@@ -47,7 +47,7 @@ export const Footer = () => {
                 </div>
                 <div className="autorais">
                     <span className="textAuto">
-                        Todos direitos reservados ao @ Copytight 2022
+                        Todos direitos reservados ao DOE! @ Copytight 2022
                     </span>
                 </div>
                 <img src={Fundo} alt="" className='fundo' />

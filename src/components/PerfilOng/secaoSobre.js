@@ -27,7 +27,7 @@ function SecaoSobre() {
 
               <div className='conteudoSobreOng carSobreTitulo'>Sobre a ong</div>
               <div className='conteudoSobreOng'> Quem Somos
-                <p>A ONG RCM é uma organização sem fins lucrativos! Trabalhamos com as comunidades para identificar problemas e encontrar soluções. Desta forma você muda a vida de uma criança e de todas as pessoas ao seu redor.
+                <p className='descricaoSobreOng'>A ONG RCM é uma organização sem fins lucrativos! Trabalhamos com as comunidades para identificar problemas e encontrar soluções. Desta forma você muda a vida de uma criança e de todas as pessoas ao seu redor.
                 </p>
 
               </div>
@@ -47,7 +47,7 @@ function SecaoSobre() {
                 </p>
 
               </div>
-              <div className='conteudoSobreOng'>teste
+              <div className='conteudoSobreOng'>Visao
                 <p>As circunstâncias do dia à dia amendrontam as famílias que vivem em vulnerabilidade social, sobretudo com um trabalho como esse acreditamos que cada uma dessas pessoas, conquistará os seus direitos!</p>
 
               </div>
@@ -102,7 +102,7 @@ function SecaoSobre() {
               </div>
               <div className='conteudoTransferenciaBancaria'>Chave Pix: 36410601000110
               </div>
-              <div className='conteudoTransferenciaBancaria'>Beneficiário: ASSOCIACAO COMUNITARIA ONG ROBERSOM CLEMENTE MONTE
+              <div className='conteudoTransferenciaBancaria'>Beneficiário: associacao comunitaria ong albert silva
               </div>
               <div className='conteudoTransferenciaBancaria avisoTransferenciaBancaria'>Antes de realizar a transferência bancária, verifique se os dados do beneficiário correspondem aos da entidade.</div>
 

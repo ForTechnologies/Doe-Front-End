@@ -16,6 +16,8 @@ import Localizacao from '../../assets/localizacao.png';
 import Telefone from '../../assets/telefone.png';
 import Email from '../../assets/email.png';
 
+import RolagemGeo from '../../assets/rolagemGeo.png'
+
 import '../CardsGeo/CardsGeo.css'
 
 
@@ -33,7 +35,7 @@ function Arrow(props) {
 }
 
 /* onOpen é a função para abrir o modal do card */
-const Cards = ({onOpen = () => {}}) => {
+const Cards = ({ onOpen = () => { } }) => {
 
     var settings = {
         dots: true,
@@ -76,37 +78,71 @@ const Cards = ({onOpen = () => {}}) => {
             <Typography variant='subtitle' sx={{ borderBottom: '5px solid #C1272D', textAlign: 'left' }}>
                 PONTOS MAIS PROXIMOS:
             </Typography>
-             <div className='container-cards'> 
+            <div className='container-cards'>
 
-            <div className='cards'>
-                    
-
-                          
-                            <h2>ONG DOE ALIMENTOS</h2>
-                            <div className="coment">
-                               <img src={Localizacao} alt="" />
-                               <span>Rua Tauí, 354 - Jardim Paulista, São Paulo - SP</span>
-                        </div>
-                        <div className="coment">
-                               <img src={Telefone} alt="" />
-                               <span>11 2459-8735</span>
-                        </div>
-                        <div className="coment">
-                               <img src={Email} alt="" />
-                               <span>ongdoealime@gmail.com</span>
-                        </div> 
-                           
-                        </div>
-                      
-                      
-
-
-                        </div>
+                <div className='cardsGeo'>
+                    <div className='cardGeo tituloGeo'> <h2>ONG DOE ALIMENTOS </h2></div>
+                    <div className='cardGeo'>
+                        <img src={Localizacao} alt="" />
+                        Rua Tauí, 354 - Jardim Paulista, São Paulo - SP
                     </div>
-                    
-                    
+                    <div className='cardGeo'>
+                        <img src={Telefone} alt="" />
+                        11 92459-8735
+                    </div>
+                    <div className='cardGeo'>
+                        <img src={Email} alt="" />
+                        <span>ongdoealime@gmail.com</span>
+                    </div>
+                </div>
+
                
+                <div className='cardsGeo'>
+                    <div className='cardGeo tituloGeo'> <h2>ONG ANJOS DA NOITE</h2></div>
+                    <div className='cardGeo'>
+                        <img src={Localizacao} alt="" />
+                        Rua jose egito, 678 - Jardim Paulista, São Paulo - SP
+                    </div>
+                    <div className='cardGeo'>
+                        <img src={Telefone} alt="" />
+                        11 93759-8705
+                    </div>
+                    <div className='cardGeo'>
+                        <img src={Email} alt="" />
+                        <span>anjosdanoite@gmail.com</span>
+                    </div>
+                </div>
+
+                
+
+                <div className='cardsGeo'>
+                    <div className='cardGeo tituloGeo'> <h2>ONG CRIANCA FUTURO </h2></div>
+                    <div className='cardGeo'>
+                        <img src={Localizacao} alt="" />
+                        Rua alanistexeira,  236 - Jardim Paulista, São Paulo - SP
+                    </div>
+                    <div className='cardGeo'>
+                        <img src={Telefone} alt="" />
+                        11 98954-8903
+                    </div>
+                    <div className='cardGeo'>
+                        <img src={Email} alt="" />
+                        <span>ongdoealime@gmail.com</span>
+                    </div>
+                </div>
            
+           <div className='rolagemGeo'>
+            <img src={RolagemGeo}></img>
+           
+           </div>
+
+
+
+            </div>
+
+        </div>
+
+
 
     )
 }

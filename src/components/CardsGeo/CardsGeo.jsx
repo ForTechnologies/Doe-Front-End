@@ -36,7 +36,7 @@ export const CardsGeo = () => {
                     <div className="comentTwo">
                         <div className="com">
                             <span className="coment">
-                            <h2>ONG DOE ALIMENTOS</h2>
+                            <h2>ONG anjos d</h2>
                             <div className="coment">
                                <img src={Localizacao} alt="" />
                                <span>Rua Tauí, 354 - Jardim Paulista, São Paulo - SP</span>

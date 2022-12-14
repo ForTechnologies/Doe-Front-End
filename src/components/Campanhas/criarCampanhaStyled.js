@@ -10,6 +10,8 @@ export const CriarCampanhaStyled = styled.div `
      display: flex;
      justify-content: center;
      align-items: center;
+     margin-left: 220px;
+     height: 100vh;
      
      main {
     display: flex;
@@ -20,7 +22,8 @@ export const CriarCampanhaStyled = styled.div `
 
 .formularioAdicionarCampanha {
 
-    margin-top: 30px;
+    position: relative;
+    bottom: 50px;
     background-color: #fff;
     padding: 30px 70px;
     border-radius: 15px;

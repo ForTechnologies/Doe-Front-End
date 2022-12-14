@@ -6,6 +6,8 @@ import Cards from '../../components/pontos/Cards';
 import ModalEdtEndereco from '../../components/pontos/ModalEdtEndereco'
 import ModalCardInfo from '../../components/pontos/ModalCardInfo'
 import '../../styles/pontos.css';
+import { Footer } from '../../components/Footer/Footer'
+
 
 export default function PontosDeDoacao() {
 
@@ -27,7 +29,11 @@ export default function PontosDeDoacao() {
                 <Cards onOpen={() => setModalCardVisible(true)}/>
             </section>
             </div>
+
+            <Footer></Footer>
         </div>
+
+       
     )
 
 };

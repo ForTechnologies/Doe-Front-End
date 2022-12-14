@@ -47,7 +47,7 @@ export const ContaAtualizarCampanha = () => {
 
      const { id } = useParams()
 
-     let history = useHistory()
+     
 
 
       const { register, handleSubmit, formState: { erros }, reset } = useForm();
