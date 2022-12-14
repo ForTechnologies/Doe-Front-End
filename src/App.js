@@ -20,7 +20,7 @@ import Login from "./pages/Login/index.js";
 import CadastroOng from "./pages/CadastroOng/index.js";
 import CadastroDoador from "./pages/CadastroDoador/index.js";
 import { Home } from "./pages/Home";
-import { Geolocalizacao } from "./pages/Geolocalizacao";
+// import { Geolocalizacao } from "./pages/pontosDeDoacao/PontosDeDoacao.jsx";
 import { Doacao } from "./pages/Doacao";
 import { Voluntario } from "./pages/Voluntario";
 import { Contato } from "./pages/Contato";
@@ -37,7 +37,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* <Route element = { <Login /> }  path="/login" /> */}
-        <Route element={<Geolocalizacao />} path="/geolocalizacao" />
+        <Route element={<PontosDeDoacao />} path="/geolocalizacao" />
         <Route element={<Doacao />} path="/doar" />
         <Route element={<InformacoesDoacao />} path="/dados-doacao" />
         <Route element={<Voluntario />} path="/voluntario" />
@@ -97,7 +97,7 @@ function App() {
           element={<FormularioDoacao />}
         ></Route>
 
-    <Route exact path="/pontos" element={<PontosDeDoacao />}></Route>
+    {/* <Route exact path="/pontos" element={<PontosDeDoacao />}></Route> */}
 
 
       </Routes>

@@ -14,7 +14,7 @@ const ModalEdtEndereco = ({ onClose = () => { } }) => {
             <div className='box-modal-endereco'>
 
                 <div style={{ padding: '20px', width: '90%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <img src="/images/logo.png" alt="logo" style={{ height: '40px' }} />
+                    {/* <img src="" alt="logo" style={{ height: '40px' }} /> */}
                     <div onClick={onClose} style={{ cursor: 'pointer' }}><CloseIcon fontSize='medium' /></div>
                 </div>
                 <div style={{ marginBottom: '20px', marginTop: '30px' }}>
